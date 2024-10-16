@@ -7,19 +7,21 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212; /* Dark background */
+    color: #f4f4f4; /* Light text */
     scroll-behavior: smooth;
 }
 
+/* Navigation Bar */
 nav {
     position: fixed;
     width: 100%;
-    background: #333;
+    background: #1f1f1f; /* Darker navigation bar */
     color: #fff;
     padding: 0.5rem 0;
     text-align: center;
     z-index: 10;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4); /* Adds shadow */
 }
 
 nav ul {
@@ -32,33 +34,37 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #f4f4f4;
     text-decoration: none;
     font-size: 1.2rem;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #0073e6;
+    color: #0073e6; /* Hover effect for links */
 }
 
+/* Header */
 header {
     height: 100vh;
     background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
-    color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 0 20px;
+    color: #f4f4f4; /* Text contrast */
 }
 
 .header-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .header-content p {
     font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .cta-button {
@@ -69,16 +75,20 @@ header {
     border-radius: 5px;
     cursor: pointer;
     text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #005bb5;
+    background-color: #005bb5; /* Button hover effect */
 }
 
+/* Sections */
 section {
     margin: 5rem auto;
     max-width: 800px;
-    background: #fff;
+    background: #1c1c1c; /* Darker background for sections */
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -86,97 +96,58 @@ section {
 
 section h2 {
     margin-bottom: 1rem;
-    color: #333;
-}
-
-ul {
-    list-style: none;
-    margin-bottom: 1rem;
-}
-
-ul li {
-    margin-bottom: 1rem;
+    color: #f4f4f4;
+    text-align: center;
 }
 
 /* Skills Section */
 .skills-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.skill {
-    margin-bottom: 1rem;
+.skills-container img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
-.skill-bar {
+.skills-container img:hover {
+    transform: scale(1.1); /* Hover effect on skills */
+}
+
+/* Repositories Section */
+table {
     width: 100%;
-    height: 20px;
-    background-color: #e0e0e0;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-}
-
-.skill-bar::after {
-    content: '';
-    display: block;
-    height: 100%;
-    width: 0;
-    background-color: #0073e6;
-    transition: width 2s ease-in-out;
-}
-
-/* Carousel */
-.carousel {
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    overflow: hidden;
-}
-
-.carousel-content {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.project {
-    min-width: 100%;
-    padding: 1rem;
-    box-sizing: border-box;
     text-align: center;
+    background-color: #1f1f1f;
 }
 
-button.prev, button.next {
-    background-color: #0073e6;
-    color: #fff;
-    border: none;
-    padding: 1rem;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+table img {
+    width: 100px;
+    transition: transform 0.3s ease;
 }
 
-button.prev {
-    left: 0;
+table img:hover {
+    transform: scale(1.1); /* Hover effect for repositories */
 }
 
-button.next {
-    right: 0;
+/* Contact Section */
+#contact img {
+    width: 50px;
+    transition: transform 0.3s ease;
 }
 
+#contact img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #333;
-    color: #fff;
-}
-
-a {
-    color: #0073e6;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+    background-color: #1f1f1f;
+    color: #f4f4f4;
 }
