@@ -5,75 +5,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santiago Montenegro Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#work-experience">Work Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <header>
-        <h1>Santiago Montenegro Quiroga</h1>
-        <p>Mechatronics Engineer and Computer Scientist</p>
+        <div class="header-content">
+            <h1>Santiago Montenegro Quiroga</h1>
+            <p>Mechatronics Engineer and Computer Scientist</p>
+            <a href="#contact" class="cta-button">Contact Me</a>
+        </div>
     </header>
     
-    <section id="profile">
-        <h2>Profile</h2>
-        <p>
-            Student of Mechatronics Engineering and Computer Science, professionally certified in Data Science and IT Support. 
-            With experience in developing exergames for rehabilitation, teaching electronics, robotics, and programming. 
-            I have a keen interest in data science and AI applications for healthcare, especially medical robotics and rehabilitation.
-        </p>
-    </section>
+    <main>
+        <section id="profile">
+            <h2>Profile</h2>
+            <p>
+                Student of Mechatronics Engineering and Computer Science, professionally certified in Data Science and IT Support. 
+                With experience in developing exergames for rehabilitation, teaching electronics, robotics, and programming. 
+                I have a keen interest in data science and AI applications for healthcare, especially medical robotics and rehabilitation.
+            </p>
+        </section>
 
-    <section id="work-experience">
-        <h2>Work Experience</h2>
-        <ul>
-            <li>
-                <h3>Research Assistant, Universidad Militar Nueva Granada</h3>
-                <p>(July 2023 - June 2024)</p>
-                <p>Developed a virtual reality exergame for upper extremity rehabilitation focused on elbow joints.</p>
-            </li>
-            <li>
-                <h3>Course Director, Loop K2 Academia STEAM</h3>
-                <p>(January 2024 - Current)</p>
-                <p>Teaching STEAM skills, block programming, microcontroller programming, and electronics using tools like LEGO Spike and Microbit.</p>
-            </li>
-        </ul>
-    </section>
+        <section id="work-experience">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>
+                    <h3>Research Assistant, Universidad Militar Nueva Granada</h3>
+                    <p>(July 2023 - June 2024)</p>
+                    <p>Developed a virtual reality exergame for upper extremity rehabilitation focused on elbow joints.</p>
+                </li>
+                <li>
+                    <h3>Course Director, Loop K2 Academia STEAM</h3>
+                    <p>(January 2024 - Current)</p>
+                    <p>Teaching STEAM skills, block programming, microcontroller programming, and electronics using tools like LEGO Spike and Microbit.</p>
+                </li>
+            </ul>
+        </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>Mechatronics Engineering, Universidad Militar Nueva Granada (2021 - 2024)</li>
-            <li>Bachelor of Science in Computer Science, University of the People (2023 - Current)</li>
-            <li>Data Science Diploma, Escuela Superior de Administración Pública (2022)</li>
-        </ul>
-    </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Mechatronics Engineering, Universidad Militar Nueva Granada (2021 - 2024)</li>
+                <li>Bachelor of Science in Computer Science, University of the People (2023 - Current)</li>
+                <li>Data Science Diploma, Escuela Superior de Administración Pública (2022)</li>
+            </ul>
+        </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <h3>Technical Skills</h3>
-        <ul>
-            <li>Python (Advanced)</li>
-            <li>SQL (Advanced)</li>
-            <li>C, C++ (Advanced)</li>
-            <li>Java (Medium)</li>
-            <li>MATLAB (Medium)</li>
-            <li>Unity (Medium)</li>
-            <li>Microcontrollers: Arduino, ESP32, STM32 (Advanced)</li>
-            <li>Raspberry PI (Medium)</li>
-        </ul>
-        <h3>Soft Skills</h3>
-        <ul>
-            <li>Assertive Communication</li>
-            <li>Teamwork</li>
-            <li>Problem Solving</li>
-            <li>Leadership</li>
-        </ul>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <p>Python</p>
+                    <div class="skill-bar" data-skill="90%"></div>
+                </div>
+                <div class="skill">
+                    <p>SQL</p>
+                    <div class="skill-bar" data-skill="85%"></div>
+                </div>
+                <div class="skill">
+                    <p>C, C++</p>
+                    <div class="skill-bar" data-skill="80%"></div>
+                </div>
+                <div class="skill">
+                    <p>MATLAB</p>
+                    <div class="skill-bar" data-skill="75%"></div>
+                </div>
+            </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:ing.montenegro@ieee.org">ing.montenegro@ieee.org</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/santiago-montenegro-quiroga-609b07201" target="_blank">Santiago Montenegro on LinkedIn</a></p>
-        <p>GitHub: <a href="https://github.com/Black-Mount" target="_blank">GitHub Profile</a></p>
-    </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="carousel">
+                <button class="prev">&#10094;</button>
+                <div class="carousel-content">
+                    <div class="project">
+                        <h3>VR Rehabilitation System</h3>
+                        <p>Developed a virtual reality system integrated with physical therapy tools for upper limb rehabilitation.</p>
+                    </div>
+                    <div class="project">
+                        <h3>Telemetry System</h3>
+                        <p>Created an authentication and telemetry system to monitor the sensors of an electric vehicle in real time.</p>
+                    </div>
+                </div>
+                <button class="next">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:ing.montenegro@ieee.org">ing.montenegro@ieee.org</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/santiago-montenegro-quiroga-609b07201" target="_blank">Santiago Montenegro on LinkedIn</a></p>
+            <p>GitHub: <a href="https://github.com/Black-Mount" target="_blank">GitHub Profile</a></p>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2024 Santiago Montenegro Quiroga</p>
