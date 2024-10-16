@@ -1,165 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Santiago Montenegro Portfolio">
-  <title>Santiago Montenegro - Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      margin: 0;
-      padding: 20px;
-    }
-    h1, h2 {
-      text-align: center;
-      color: #2c3e50;
-    }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .skills img, .cert img {
-      display: inline-block;
-      margin: 5px;
-      vertical-align: middle;
-    }
-    table {
-      width: 100%;
-      margin-bottom: 20px;
-      border-collapse: collapse;
-    }
-    table td {
-      text-align: center;
-      padding: 10px;
-    }
-    table img {
-      width: 100px;
-      height: 100px;
-    }
-    .contact a img {
-      width: 50px;
-      height: 50px;
-      margin: 10px;
-    }
-    .cert img {
-      width: 250px;
-      max-width: 100%;
-    }
-    footer {
-      text-align: center;
-      margin-top: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Santiago Montenegro Portfolio">
+    <title>Santiago Montenegro - Portfolio</title>
+
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JavaScript for Interactivity -->
+    <script defer src="scripts.js"></script>
 </head>
+
 <body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#repos">Repositories</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  <div class="container">
-    <h1>Santiago Montenegro</h1>
-    <h2>Mechatronics Engineering Student | Computer Science Student | Data Science | Robotics</h2>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- About Section -->
+        <section id="about" class="section">
+            <h1 class="fade-in">Santiago Montenegro</h1>
+            <h2 class="fade-in">Mechatronics Engineering | Computer Science | Data Science | Robotics</h2>
+            <p class="fade-in">Hello! I'm Santiago Montenegro, a driven student studying Mechatronics Engineering and Computer Science. 
+                My interests lie in leveraging data science, analytics, and AI to innovate healthcare technologies, particularly in medical 
+                robotics and prosthetic development.</p>
+            <ul class="fade-in">
+                <li>🎓 Dual degrees in Mechatronics Engineering and Computer Science.</li>
+                <li>💻 Proficient in Python, Java, R, SQL, C++, and MATLAB.</li>
+                <li>🤖 Passionate about AI and robotics for medical innovation.</li>
+            </ul>
+        </section>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! I'm Santiago Montenegro, a driven student studying Mechatronics Engineering and Computer Science. I hold certifications in Data Science and IT Support and have a strong background in teaching electronics, robotics, and programming. My interests lie in leveraging data science, analytics, and artificial intelligence to innovate healthcare technologies, particularly in medical robotics and prosthetic development.</p>
-      <ul>
-        <li>🎓 Currently pursuing dual degrees in Mechatronics Engineering and Computer Science.</li>
-        <li>💻 Proficient in Python, Java, R, SQL, C++, and MATLAB.</li>
-        <li>🤖 Dedicated to applying AI and data analytics to advance medical robotics and prosthetics.</li>
-        <li>🌱 Constantly seeking new opportunities in healthcare technology.</li>
-      </ul>
-    </section>
+        <!-- Skills Section -->
+        <section id="skills" class="section fade-in">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <img src="https://img.shields.io/badge/Python-blue?logo=python&logoColor=white" alt="Python">
+                <img src="https://img.shields.io/badge/Java-orange?logo=java&logoColor=white" alt="Java">
+                <img src="https://img.shields.io/badge/C-blue?logo=c&logoColor=white" alt="C">
+                <img src="https://img.shields.io/badge/C++-blue?logo=c%2B%2B&logoColor=white" alt="C++">
+                <img src="https://img.shields.io/badge/Arduino-blue?logo=arduino&logoColor=white" alt="Arduino">
+                <img src="https://img.shields.io/badge/RaspberryPi-red?logo=raspberrypi&logoColor=white" alt="Raspberry Pi">
+                <img src="https://img.shields.io/badge/MATLAB-orange?logo=mathworks&logoColor=white" alt="MATLAB">
+                <img src="https://img.shields.io/badge/R-blue?logo=r&logoColor=white" alt="R">
+            </div>
+        </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills" align="center">
-        <img src="https://img.shields.io/badge/Python-blue?logo=python&logoColor=white" alt="Python">
-        <img src="https://img.shields.io/badge/Java-orange?logo=java&logoColor=white" alt="Java">
-        <img src="https://img.shields.io/badge/C-blue?logo=c&logoColor=white" alt="C">
-        <img src="https://img.shields.io/badge/C++-blue?logo=c%2B%2B&logoColor=white" alt="C++">
-        <img src="https://img.shields.io/badge/Arduino-blue?logo=arduino&logoColor=white" alt="Arduino">
-        <img src="https://img.shields.io/badge/RaspberryPi-red?logo=raspberrypi&logoColor=white" alt="Raspberry Pi">
-        <img src="https://img.shields.io/badge/MATLAB-orange?logo=mathworks&logoColor=white" alt="MATLAB">
-        <img src="https://img.shields.io/badge/R-blue?logo=r&logoColor=white" alt="R">
-        <img src="https://img.shields.io/badge/SQL-blue?logo=postgresql&logoColor=white" alt="SQL">
-        <img src="https://img.shields.io/badge/Unity-black?logo=unity&logoColor=white" alt="Unity">
-        <img src="https://img.shields.io/badge/SolidWorks-red?logo=solidworks&logoColor=white" alt="SolidWorks">
-      </div>
-    </section>
+        <!-- Repositories Section -->
+        <section id="repos" class="section fade-in">
+            <h2>Repositories</h2>
+            <div class="repo-grid">
+                <a href="https://github.com/Black-Mount/STM32-Projects" class="repo-card">
+                    <img src="https://github.com/Black-Mount/Varios/blob/main/stm32.png" alt="STM32 Projects">
+                    <h3>STM32 Projects</h3>
+                </a>
+                <a href="https://github.com/Black-Mount/IBM-DataScience" class="repo-card">
+                    <img src="https://github.com/Black-Mount/Varios/blob/main/data%20ibm.png" alt="IBM Data Science">
+                    <h3>IBM Data Science</h3>
+                </a>
+                <!-- Add more repositories here -->
+            </div>
+        </section>
 
-    <section id="repos">
-      <h2>Repositories</h2>
-      <table>
-        <tr>
-          <td>
-            <a href="https://github.com/Black-Mount/STM32-Projects">
-              <img src="https://github.com/Black-Mount/Varios/blob/main/stm32.png" alt="STM32 Projects">
-              <br>STM32 Projects
-            </a>
-          </td>
-          <td>
-            <a href="https://github.com/Black-Mount/IBM-DataScience">
-              <img src="https://github.com/Black-Mount/Varios/blob/main/data%20ibm.png" alt="IBM Data Science">
-              <br>IBM Data Science Projects
-            </a>
-          </td>
-        </tr>
-        <!-- Add more repos similarly -->
-      </table>
-    </section>
+        <!-- Certifications Section -->
+        <section id="certifications" class="section fade-in">
+            <h2>Achievements and Certifications</h2>
+            <div class="cert-grid">
+                <a href="https://www.coursera.org/account/accomplishments/specialization/G2XF7F932FPL">
+                    <img src="https://github.com/Black-Mount/Varios/blob/main/IBM%20certificate.jpg" alt="IBM Certificate">
+                    <h3>IBM Data Science</h3>
+                </a>
+                <a href="https://www.coursera.org/account/accomplishments/specialization/5RJ2A2XYVHAL">
+                    <img src="https://github.com/Black-Mount/Varios/blob/main/IT%20certificate.jpg" alt="Google IT Certificate">
+                    <h3>Google IT Support</h3>
+                </a>
+                <!-- Add more certifications -->
+            </div>
+        </section>
 
-    <section id="certifications">
-      <h2>Achievements and Certifications</h2>
-      <table>
-        <tr>
-          <td>
-            <strong>IBM Data Science Professional Certificate</strong> (2024)
-            <a href="https://www.coursera.org/account/accomplishments/specialization/G2XF7F932FPL">
-              <img src="https://github.com/Black-Mount/Varios/blob/main/IBM%20certificate.jpg" alt="IBM Certificate">
-            </a>
-          </td>
-          <td>
-            <strong>Google Professional Certificate in IT Support</strong> (2022)
-            <a href="https://www.coursera.org/account/accomplishments/specialization/5RJ2A2XYVHAL">
-              <img src="https://github.com/Black-Mount/Varios/blob/main/IT%20certificate.jpg" alt="Google IT Certificate">
-            </a>
-          </td>
-        </tr>
-        <!-- Add more certifications -->
-      </table>
-    </section>
+        <!-- Work Experience Section -->
+        <section id="work" class="section fade-in">
+            <h2>Work Experience</h2>
+            <ul>
+                <li><strong>Research Assistant</strong> at Universidad Militar Nueva Granada (July 2023 - Current)</li>
+                <li><strong>Robotics Teacher</strong> at Loop K2 Academia STEAM (January 2024 - Current)</li>
+            </ul>
+        </section>
 
-    <section id="work">
-      <h2>Work Experience</h2>
-      <ul>
-        <li><strong>Research Assistant</strong> at Universidad Militar Nueva Granada (July 2023 - Current)</li>
-        <li><strong>Robotics and Programming Teacher</strong> at Loop K2 Academia STEAM (January 2024 - Current)</li>
-      </ul>
-    </section>
+        <!-- Contact Section -->
+        <section id="contact" class="section fade-in">
+            <h2>Contact Me</h2>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/santiago-montenegro-quiroga-609b07201"><img src="https://github.com/Black-Mount/Varios/blob/main/LinkedIn_icon.svg.png" alt="LinkedIn"></a>
+                <a href="mailto:ing.montenegro@ieee.org"><img src="https://github.com/Black-Mount/Varios/blob/main/gmail.png" alt="Email"></a>
+                <a href="https://wa.link/pio3t6"><img src="https://github.com/Black-Mount/Varios/blob/main/WhatsApp_icon.png" alt="WhatsApp"></a>
+            </div>
+        </section>
+    </div>
 
-    <section id="contact">
-      <h2>Connect with Me</h2>
-      <div class="contact" align="center">
-        <a href="https://www.linkedin.com/in/santiago-montenegro-quiroga-609b07201">
-          <img src="https://github.com/Black-Mount/Varios/blob/main/LinkedIn_icon.svg.png" alt="LinkedIn">
-        </a>
-        <a href="mailto:ing.montenegro@ieee.org">
-          <img src="https://github.com/Black-Mount/Varios/blob/main/gmail.png" alt="Email">
-        </a>
-        <a href="https://wa.link/pio3t6">
-          <img src="https://github.com/Black-Mount/Varios/blob/main/WhatsApp_icon.png" alt="WhatsApp">
-        </a>
-      </div>
-    </section>
+    <!-- Back-to-top Button -->
+    <button id="back-to-top" onclick="scrollToTop()">↑</button>
 
     <footer>
-      <p>&copy; 2024 Santiago Montenegro</p>
+        <p>&copy; 2024 Santiago Montenegro</p>
     </footer>
-  </div>
-
 </body>
+
 </html>
