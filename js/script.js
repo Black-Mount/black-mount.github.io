@@ -1,40 +1,43 @@
-// Function to animate the skill bars when they come into view
-window.addEventListener('scroll', () => {
-    const skillBars = document.querySelectorAll('.skill-bar');
-    skillBars.forEach(skill => {
-        const skillPosition = skill.getBoundingClientRect().top;
-        const screenPosition = window.innerHeight / 1.3;
+// Scroll reveal for sections
+document.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight / 1.5;
 
-        if (skillPosition < screenPosition) {
-            skill.style.width = skill.dataset.skill;
+        if (sectionTop < screenPosition) {
+            section.classList.add('active');
         }
     });
 });
 
-// Project carousel functionality
-let currentSlide = 0;
-const slides = document.querySelectorAll('.project');
-const totalSlides = slides.length;
+// Smooth scroll to sections when clicking on nav links (optional if using CSS smooth scroll)
+const navLinks = document.querySelectorAll('nav ul li a');
 
-document.querySelector('.next').addEventListener('click', () => {
-    nextSlide();
+navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 50, // Adjust scroll position slightly
+                behavior: 'smooth'
+            });
+        }
+    });
 });
 
-document.querySelector('.prev').addEventListener('click', () => {
-    prevSlide();
+// Example for a hover animation effect (for repository images)
+const repositoryImages = document.querySelectorAll('.repository img');
+
+repositoryImages.forEach(image => {
+    image.addEventListener('mouseover', () => {
+        image.style.transform = 'scale(1.2)';
+    });
+
+    image.addEventListener('mouseout', () => {
+        image.style.transform = 'scale(1)';
+    });
 });
-
-function nextSlide() {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (currentSlide + 1) % totalSlides;
-    slides[currentSlide].classList.add('active');
-}
-
-function prevSlide() {
-    slides[currentSlide].classList.remove('active');
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-    slides[currentSlide].classList.add('active');
-}
-
-// Adding the 'active' class to the first slide to show it initially
-slides[currentSlide].classList.add('active');
