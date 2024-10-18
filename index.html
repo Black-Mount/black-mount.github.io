@@ -4,179 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santiago Montenegro Portfolio</title>
-    <!-- Reference to CSS file in the css folder -->
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Reference to JavaScript file in the js folder -->
-    <script src="js/script.js" defer></script>
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Smooth Scrolling -->
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#profile">About Me</a></li>
-            <li><a href="#work-experience">Work Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Repositories</a></li>
-            <li><a href="#contact">Connect with Me</a></li>
-        </ul>
-    </nav>
-
     <header>
-        <div class="header-content">
-            <h1>Santiago Montenegro Quiroga</h1>
-            <p>Medical Engineering & Computer Science Student | Robotics | Data Science | AI</p>
-            <a href="#contact" class="cta-button">Contact Me</a>
-        </div>
+        <h1>Santiago Montenegro - Portfolio</h1>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Work Experience</a></li>
+                <li><a href="#volunteering">Volunteering</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Connect with Me</a></li>
+            </ul>
+            <button id="menu-toggle" class="menu-icon">☰</button>
+        </nav>
     </header>
 
-    <main>
-        <section id="profile" class="section">
+    <div class="container">
+        <section id="about">
             <h2>About Me</h2>
-            <p>Hello! I'm Santiago Montenegro, a driven student studying Mechatronics Engineering and Computer Science. I hold certifications in Data Science and IT Support and have a strong background in teaching electronics, robotics, and programming. My interests lie in leveraging data science, analytics, and artificial intelligence to innovate healthcare technologies, particularly in medical robotics and prosthetic development.</p>
-            <ul>
-                <li>🎓 Currently pursuing dual degrees in Mechatronics Engineering and Computer Science.</li>
-                <li>💻 Proficient in Python, Java, R, SQL, C++, and MATLAB, with a focus on robotics and data-driven solutions.</li>
-                <li>🤖 Dedicated to applying AI and data analytics to advance medical robotics and prosthetic development.</li>
-                <li>🌱 Constantly seeking new opportunities to learn and innovate in healthcare technology.</li>
-            </ul>
+            <div class="about-container">
+                <img src="images/myphoto.JPEG" alt="Santiago Montenegro" class="profile-photo">
+                <div class="about-text">
+                    <p>I am Santiago Montenegro, a student of Mechatronics Engineering and Computer Science with certifications in Data Science and IT Support. I have experience developing exergames aimed at rehabilitation and teaching electronics, robotics, and programming in English. I am passionate about healthcare applications involving medical robotics, prosthetic development, and rehabilitation.</p>
+                </div>
+            </div>
         </section>
 
-        <section id="work-experience" class="section">
+        <section id="experience">
             <h2>Work Experience</h2>
             <ul>
                 <li>
-                    <h3>Research Assistant, Universidad Militar Nueva Granada</h3>
-                    <p>(July 2023 - Current)</p>
-                    <p>Developing a virtual reality exergame aimed at integration with an upper extremity rehabilitation system focused on the elbow joint.</p>
+                    <strong>Research Assistant</strong> - Universidad Militar Nueva Granada (July 2023 - June 2024)
+                    <p>Developing a virtual reality exergame integrated with an upper extremity rehabilitation system, focused on the elbow joint.</p>
                 </li>
                 <li>
-                    <h3>Robotics and Programming Teacher, Loop K2 Academia STEAM</h3>
-                    <p>(January 2024 - Current)</p>
-                    <p>Teaching classes in both Spanish and English, focusing on the development of STEAM skills, block programming, problem-solving, microcontroller programming, and analog electronics using resources such as LEGO Spike and Microbit.</p>
+                    <strong>Course Director</strong> - Loop K2 Academia STEAM (January 2024 - Current)
+                    <p>Teaching STEAM skills, block programming, problem solving, microcontroller programming, and electronics using LEGO Spike, Microbit, and more.</p>
                 </li>
             </ul>
         </section>
 
-        <section id="education" class="section">
-            <h2>Education</h2>
+        <section id="volunteering">
+            <h2>Volunteering</h2>
             <ul>
-                <li>Mechatronics Engineering, Universidad Militar Nueva Granada (2021 - 2024)</li>
-                <li>Bachelor of Science in Computer Science, University of the People (2023 - Current)</li>
+                <li>
+                    <strong>Vice Chair</strong> - EMBS IEEE Universidad Militar Student Branch (January 2024 - June 2024)
+                    <p>Promoting the chapter's growth in biomedical engineering, working groups, and official recognition.</p>
+                </li>
+                <li>
+                    <strong>Chair</strong> - IEEE Universidad Militar Student Branch (2021 - 2023)
+                    <p>Established multiple student chapters, led national events, and increased organizational growth and recognition.</p>
+                </li>
+                <li>
+                    <strong>Computer Group Leader</strong> - VTS IEEE Universidad Militar Student Branch (June - November 2023)
+                    <p>Led the development of an informative webpage with an authentication system and telemetry system for an electric car project.</p>
+                </li>
             </ul>
         </section>
 
-        <section id="skills" class="section">
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Mechatronics Engineering</strong> - Universidad Militar Nueva Granada (January 2021 - July 2024)
+                </li>
+                <li>
+                    <strong>Bachelor of Science in Computer Science</strong> - University of the People (September 2023 - Present)
+                </li>
+                <li>
+                    <strong>Data Science Diploma</strong> - Escuela Superior de Administración Pública (August - October 2022)
+                </li>
+            </ul>
+        </section>
+
+        <section id="skills">
             <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skill">
-                    <p>Python <i class="fab fa-python" style="color: #4B8BBE;"></i></p>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 90%;"></div>
+            <ul>
+                <li><strong>Programming:</strong> Python, SQL, C, C++, Java, MATLAB, Unity</li>
+                <li><strong>Microcontrollers & Microprocessors:</strong> Arduino, ESP32, STM32, Raspberry PI</li>
+                <li><strong>Soft Skills:</strong> Communication, Leadership, Problem Solving, Teamwork</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <img src="images/stm32.png" alt="STM32 Project" class="project-image">
+                    <div class="project-details">
+                        <h3>STM32 Projects</h3>
+                        <p>This project focuses on embedded systems using STM32 microcontrollers, implementing real-time systems, sensor integration, and control applications.</p>
+                        <div class="project-buttons">
+                            <a href="projects/stm32.html">View Project</a>
+                        </div>
                     </div>
                 </div>
-                <div class="skill">
-                    <p>Java <i class="fab fa-java" style="color: #f89820;"></i></p>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 80%;"></div>
+
+                <div class="project-card">
+                    <img src="images/data_ibm.png" alt="IBM Data Science Projects" class="project-image">
+                    <div class="project-details">
+                        <h3>IBM Data Science Projects</h3>
+                        <p>A comprehensive collection of projects involving Python, data analysis, visualization, machine learning, and other data science skills.</p>
+                        <div class="project-buttons">
+                            <a href="projects/ibm-ds.html">View Project</a>
+                        </div>
                     </div>
                 </div>
-                <div class="skill">
-                    <p>C <i class="fas fa-code" style="color: #00599C;"></i></p>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 85%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <p>C++ <i class="fas fa-code" style="color: #00599C;"></i></p>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 80%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <p>Arduino <i class="fab fa-arduino" style="color: #00979D;"></i></p>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 75%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <p>MATLAB <i class="fas fa-square-root-alt" style="color: #e16737;"></i></p>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 85%;"></div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <p>SQL <i class="fas fa-database" style="color: #336791;"></i></p>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 75%;"></div>
+
+                <div class="project-card">
+                    <img src="images/NetBeans-Logo.wine.png" alt="Java Netbeans Projects" class="project-image">
+                    <div class="project-details">
+                        <h3>Java Netbeans Projects</h3>
+                        <p>Java development projects created using NetBeans, focusing on desktop applications, database management, and UI/UX design.</p>
+                        <div class="project-buttons">
+                            <a href="projects/java-netbeans.html">View Project</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="section">
-            <h2>Repositories</h2>
-            <div class="repository-container">
-                <div class="repository">
-                    <a href="https://github.com/Black-Mount/STM32-Projects">
-                        <img src="images/stm32.png" width="100" height="100" alt="STM32 Projects Image">
-                        <br>STM32 Projects
-                    </a>
-                </div>
-                <div class="repository">
-                    <a href="https://github.com/Black-Mount/IBM-DataScience">
-                        <img src="images/data_ibm.png" width="100" height="100" alt="IBM Data Science Image">
-                        <br>IBM Data Science Projects
-                    </a>
-                </div>
-                <div class="repository">
-                    <a href="https://github.com/Black-Mount/Java-Netbeans">
-                        <img src="images/NetBeans-Logo.wine.png" width="100" height="100" alt="Java Netbeans Image">
-                        <br>Java Netbeans Projects
-                    </a>
-                </div>
-                <div class="repository">
-                    <a href="https://github.com/Black-Mount/Data-ScienceUD">
-                        <img src="images/data_ud.png" width="100" height="100" alt="Data Science UD Image">
-                        <br>Data Science UD Projects
-                    </a>
-                </div>
-                <div class="repository">
-                    <a href="https://github.com/Black-Mount/Java-Eclipse">
-                        <img src="images/eclipse_logo.png" width="100" height="100" alt="Java Eclipse Image">
-                        <br>Java Eclipse Projects
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
+        <section id="contact">
             <h2>Connect with Me</h2>
-            <div align="center">
-                <a href="https://www.linkedin.com/in/santiago-montenegro-quiroga-609b07201">
-                    <i class="fab fa-linkedin" style="color: #0073b1; font-size: 50px;"></i> <!-- LinkedIn icon -->
-                </a>
-                &nbsp;&nbsp;&nbsp;
-                <a href="mailto:ing.montenegro@ieee.org">
-                    <i class="fas fa-envelope" style="color: #c71610; font-size: 50px;"></i> <!-- Email icon -->
-                </a>
-                &nbsp;&nbsp;&nbsp;
-                <a href="https://wa.link/pio3t6">
-                    <i class="fab fa-whatsapp" style="color: #25d366; font-size: 50px;"></i> <!-- WhatsApp icon -->
-                </a>
+            <div class="contact-container">
+                <div class="contact-item">
+                    <a href="mailto:ing.montenegro@ieee.org" target="_blank">
+                        <img src="images/gmail.png" alt="Email Icon" class="contact-icon">
+                        <p>Email</p>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.linkedin.com/in/santiago-montenegro-quiroga-609b07201" target="_blank">
+                        <img src="images/linkedin.png" alt="LinkedIn Icon" class="contact-icon">
+                        <p>LinkedIn</p>
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://github.com/Black-Mount" target="_blank">
+                        <img src="images/github.png" alt="GitHub Icon" class="contact-icon">
+                        <p>GitHub</p>
+                    </a>
+                </div>
             </div>
         </section>
-    </main>
+    </div> <!-- End of container -->
 
-    <footer>
-        <p>&copy; 2024 Santiago Montenegro Quiroga</p>
-    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
