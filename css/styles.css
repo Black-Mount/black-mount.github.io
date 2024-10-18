@@ -82,7 +82,7 @@ p, ul {
 .about-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;  /* Center content horizontally */
     margin-top: 20px;
 }
 
@@ -90,7 +90,7 @@ p, ul {
     width: 240px;
     height: auto;
     border-radius: 50%;
-    margin-right: 40px;
+    margin-right: 20px;  /* Reduced margin to bring the photo closer to the text */
     border: 4px solid #4CAFEB;
 }
 
@@ -98,7 +98,6 @@ p, ul {
     max-width: 600px;
     font-size: 1.1rem;
     line-height: 1.7;
-    padding-left: 20px; /* Extra padding to create space from the border */
 }
 
 @media (max-width: 768px) {
