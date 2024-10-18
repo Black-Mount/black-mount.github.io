@@ -14,9 +14,9 @@ body {
 
 /* Centering Container */
 .container {
-    max-width: 1100px;  /* Prevent full screen spread */
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 20px;  /* Add padding for breathing space */
+    padding: 20px;
 }
 
 /* Header Styling */
@@ -82,7 +82,7 @@ p, ul {
 .about-container {
     display: flex;
     align-items: center;
-    justify-content: center;  /* Center content horizontally */
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -90,7 +90,7 @@ p, ul {
     width: 240px;
     height: auto;
     border-radius: 50%;
-    margin-right: 20px;  /* Reduced margin to bring the photo closer to the text */
+    margin-right: 20px;
     border: 4px solid #4CAFEB;
 }
 
@@ -142,13 +142,108 @@ ul li strong {
     color: #ffffff;
 }
 
-/* Skills Section */
-#skills ul li {
-    margin-bottom: 8px;
-    font-weight: bold;
+/* Carousel for Skills Section */
+/* Skills Carousel Styling */
+#skills-carousel {
+    text-align: center;
+    position: relative;
 }
 
-/* Projects Section - New Design with Hover Animation */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.skill-set {
+    min-width: 100%;
+    display: none;
+    text-align: left;
+    position: relative;
+    padding-bottom: 40px; /* Add padding to make space for arrows */
+}
+
+.skill-set.active {
+    display: block;
+}
+
+.carousel-nav {
+    background-color: transparent; /* Keep transparent background */
+    border: none;
+    color: #4CAFEB;  /* Use the same blue color as progress bars */
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0; /* Position arrows at the bottom */
+    font-size: 30px; /* Increase size for better visibility */
+}
+
+.carousel-nav.prev {
+    left: 10px; /* Align left arrow near the container edge */
+}
+
+.carousel-nav.next {
+    right: 10px; /* Align right arrow near the container edge */
+}
+
+.carousel-nav:hover {
+    background-color: rgba(76, 175, 235, 0.1);  /* Slight hover effect using the same blue */
+}
+
+/* Progress Bars */
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill span {
+    font-weight: bold;
+    color: #f1f1f1;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    background-color: #1f1f1f;
+    border-radius: 5px;
+    height: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #4CAFEB;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+
+/* Individual Progress Widths */
+.progress.python { width: 90%; }
+.progress.sql { width: 80%; }
+.progress.c { width: 70%; }
+.progress.cpp { width: 85%; }
+.progress.java { width: 80%; }
+.progress.matlab { width: 65%; }
+
+.progress.esp32 { width: 85%; }
+.progress.stm32 { width: 80%; }
+.progress.raspberry { width: 75%; }
+
+.progress.solidworks { width: 70%; }
+.progress.ansys { width: 65%; }
+
+.progress.communication { width: 90%; }
+.progress.leadership { width: 85%; }
+.progress.problemsolving { width: 90%; }
+
+
+/* Projects Section */
 .projects-container {
     display: flex;
     flex-direction: column;
@@ -220,7 +315,7 @@ ul li strong {
     background-color: #005f73;
 }
 
-/* Contact Section - Improved */
+/* Contact Section */
 #contact {
     padding: 40px;
     background-color: #1c1c1c;

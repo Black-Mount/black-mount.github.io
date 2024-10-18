@@ -39,4 +39,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
     window.addEventListener('scroll', revealSection);
     revealSection();  // Initial check when the page loads
+
+    // Carousel for Skills Section
+    const prevButton = document.querySelector('.carousel-nav.prev');
+    const nextButton = document.querySelector('.carousel-nav.next');
+    const skillSets = document.querySelectorAll('.skill-set');
+    let currentIndex = 0;
+
+    function showSkillSet(index) {
+        skillSets.forEach((skillSet, i) => {
+            skillSet.classList.remove('active');
+            if (i === index) {
+                skillSet.classList.add('active');
+            }
+        });
+    }
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % skillSets.length;
+        showSkillSet(currentIndex);
+    });
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + skillSets.length) % skillSets.length;
+        showSkillSet(currentIndex);
+    });
+
+    showSkillSet(currentIndex); // Initialize first skill set
 });
