@@ -94,17 +94,42 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Handle next button click
     nextButton.addEventListener('click', () => {
-        currentIndex = (currentIndex + 1) % skillSets.length; // Cycle forward
+        currentIndex = (currentIndex + 1) % skillSets.length;
         showSkillSet(currentIndex);
     });
 
-    // Handle previous button click
     prevButton.addEventListener('click', () => {
-        currentIndex = (currentIndex - 1 + skillSets.length) % skillSets.length; // Cycle backward
+        currentIndex = (currentIndex - 1 + skillSets.length) % skillSets.length;
         showSkillSet(currentIndex);
     });
 
     showSkillSet(currentIndex); // Initialize first skill set
+
+    // Gallery Carousel
+    const galleryPrevButton = document.querySelector('.gallery-nav.prev');
+    const galleryNextButton = document.querySelector('.gallery-nav.next');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    let galleryIndex = 0;
+
+    function showGalleryItem(index) {
+        galleryItems.forEach((item, i) => {
+            item.classList.remove('active');
+            if (i === index) {
+                item.classList.add('active');
+            }
+        });
+    }
+
+    galleryNextButton.addEventListener('click', () => {
+        galleryIndex = (galleryIndex + 1) % galleryItems.length;
+        showGalleryItem(galleryIndex);
+    });
+
+    galleryPrevButton.addEventListener('click', () => {
+        galleryIndex = (galleryIndex - 1 + galleryItems.length) % galleryItems.length;
+        showGalleryItem(galleryIndex);
+    });
+
+    showGalleryItem(galleryIndex); // Initialize first gallery item
 });
