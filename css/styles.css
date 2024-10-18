@@ -10,6 +10,24 @@ body {
     background-color: #121212;
     color: #f1f1f1;
     line-height: 1.6;
+    position: relative;
+}
+
+/* Background Blur with More Pronounced Vertical Gradient and Light Blue */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,                      /* Vertical direction */
+        rgba(135, 206, 250, 0.6) 0%,    /* Lighter blue at the top (SkyBlue) */
+        rgba(50, 50, 50, 0.4) 100%      /* Gray at the bottom */
+    );
+    backdrop-filter: blur(30px);        /* Increase the blur effect */
+    z-index: -1;                        /* Behind all content */
 }
 
 /* Centering Container */
@@ -21,7 +39,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #1f1f1f;
+    background-color: rgba(31, 31, 31, 0.8); /* Slight transparency */
     color: #f1f1f1;
     padding: 15px;
     text-align: center;
@@ -78,18 +96,24 @@ p, ul {
     color: #e0e0e0;
 }
 
-/* About Section */
+
+/* Adjusted About Section with Improved Contrast */
 .about-container {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
+    gap: 30px; /* Increase space between image and text */
+    padding: 20px;
+    background-color: transparent; /* No background color */
+    border-radius: 0; /* Reset border-radius */
+    box-shadow: none; /* Remove shadow */
 }
 
 .profile-photo {
     width: 240px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 15px; /* Rounded rectangle instead of circle */
     margin-right: 20px;
     border: 4px solid #4CAFEB;
 }
@@ -98,6 +122,8 @@ p, ul {
     max-width: 600px;
     font-size: 1.1rem;
     line-height: 1.7;
+    text-align: left;
+    padding: 10px;
 }
 
 @media (max-width: 768px) {
@@ -105,6 +131,7 @@ p, ul {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 20px;
     }
     .profile-photo {
         margin: 0 0 20px 0;
@@ -114,6 +141,8 @@ p, ul {
         max-width: 100%;
     }
 }
+
+
 
 /* Work Experience and Education List Styling */
 ul {
